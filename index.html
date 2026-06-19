@@ -1,229 +1,245 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetCare</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PetCare: banho, tosa, consultas e hospedagem com agendamento rápido e cuidado de verdade para o seu pet.">
+  <meta name="theme-color" content="#183d3d">
+  <meta property="og:title" content="PetCare | Cuidado que faz bem">
+  <meta property="og:description" content="Agende o cuidado do seu pet em poucos passos.">
+  <meta property="og:type" content="website">
+  <title>PetCare | Cuidado que faz bem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-    <!-- HEADER -->
+  <header class="header" id="topo">
+    <div class="container nav">
+      <a class="logo" href="#inicio" aria-label="PetCare, página inicial">
+        <span class="logo-mark" aria-hidden="true">🐾</span>
+        <span>Pet<span>Care</span></span>
+      </a>
 
-    <header class="header">
-        <div class="container nav">
-            <h1 class="logo">🐾 PetCare</h1>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
 
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
+      <nav id="nav-menu" aria-label="Navegação principal">
+        <ul class="nav-links">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+        </ul>
+      </nav>
 
-            <a href="#contato" class="btn">Agendar Atendimento</a>
+      <button class="btn btn-small nav-cta" type="button" data-open-booking>Agendar agora</button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="hero-blob hero-blob-one" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob-two" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span></span> Cuidado completo, carinho de verdade</div>
+          <h1>Seu pet feliz.<br><em>Você tranquilo.</em></h1>
+          <p class="hero-lead">Banho, tosa, saúde e hospedagem em um só lugar — com profissionais apaixonados e agendamento sem complicação.</p>
+          <div class="hero-actions">
+            <button class="btn" type="button" data-open-booking>Agendar atendimento <span aria-hidden="true">→</span></button>
+            <a class="text-link" href="#servicos">Conhecer serviços <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="trust-row" aria-label="Diferenciais da PetCare">
+            <div><strong>4,9</strong><span>★★★★★<small>+320 avaliações</small></span></div>
+            <div class="avatar-stack" aria-hidden="true"><span>🐶</span><span>🐱</span><span>🐰</span></div>
+            <p><strong>+1.500</strong> pets cuidados</p>
+          </div>
         </div>
-    </header>
 
-    <!-- HERO -->
-
-    <section class="hero" id="home">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h2>
-                    Seu pet merece cuidado, carinho e atenção especial.
-                </h2>
-
-                <p>
-                    Banho, tosa, consultas e muito amor para o seu melhor amigo.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#contato" class="btn">Agendar Agora</a>
-                    <a href="#servicos" class="btn-outline">Conhecer Serviços</a>
-                </div>
-            </div>
-
-            <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1000"
-                    alt="Cachorro feliz">
-            </div>
+        <div class="hero-visual reveal">
+          <div class="hero-image-wrap">
+            <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?q=85&w=1200&auto=format&fit=crop" alt="Cachorro golden retriever feliz" width="720" height="820">
+            <span class="image-badge badge-care">♥ Cuidado individual</span>
+            <span class="image-badge badge-open"><i></i> Aberto hoje</span>
+          </div>
+          <div class="next-slot">
+            <span class="slot-icon">◷</span>
+            <div><small>Próximo horário</small><strong>Hoje, 14:30</strong></div>
+            <button type="button" data-open-booking aria-label="Agendar próximo horário">→</button>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- SOBRE -->
-
-    <section class="sobre" id="sobre">
-        <div class="container sobre-grid">
-
-            <div>
-                <img src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?q=80&w=1000" alt="Pet Shop">
-            </div>
-
-            <div>
-                <h2>Sobre a PetCare</h2>
-
-                <p>
-                    A PetCare nasceu com o objetivo de oferecer cuidado, carinho e bem-estar para os pets.
-                    Nossa equipe trabalha diariamente para proporcionar a melhor experiência possível.
-                </p>
-
-                <div class="stats">
-                    <div class="stat-card">
-                        <h3>+1500</h3>
-                        <p>Pets Atendidos</p>
-                    </div>
-
-                    <div class="stat-card">
-                        <h3>5 Anos</h3>
-                        <p>Experiência</p>
-                    </div>
-
-                    <div class="stat-card">
-                        <h3>+300</h3>
-                        <p>Clientes Fiéis</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+    <section class="benefits" aria-label="Benefícios">
+      <div class="container benefit-grid">
+        <article><span>♙</span><div><h3>Equipe especializada</h3><p>Profissionais treinados e apaixonados.</p></div></article>
+        <article><span>♧</span><div><h3>Ambiente seguro</h3><p>Higiene, conforto e cuidado em cada detalhe.</p></div></article>
+        <article><span>♡</span><div><h3>Carinho de verdade</h3><p>Cada pet é recebido como parte da família.</p></div></article>
+        <article><span>◷</span><div><h3>Agendamento rápido</h3><p>Escolha serviço e horário em poucos passos.</p></div></article>
+      </div>
     </section>
 
-    <!-- SERVIÇOS -->
-
-    <section class="servicos" id="servicos">
-        <div class="container">
-
-            <div class="section-title">
-                <h2>Nossos Serviços</h2>
-                <p>Cuidamos do seu pet com muito amor e atenção.</p>
-            </div>
-
-            <div class="cards">
-
-                <div class="card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?q=80&w=1000"
-                            alt="Banho e Tosa">
-                    </div>
-
-                    <h3>🛁 Banho e Tosa</h3>
-
-                    <p>
-                        Cuidado completo para deixar seu pet limpo e feliz.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?q=80&w=1000"
-                            alt="Veterinário">
-                    </div>
-
-                    <h3>Consultas</h3>
-
-                    <p>
-                        Atendimento especializado para cuidar da saúde do seu pet.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=1000"
-                            alt="Hotel Pet">
-                    </div>
-
-                    <h3>Hotel Pet</h3>
-
-                    <p>
-                        Ambiente seguro e confortável para o seu melhor amigo.
-                    </p>
-                </div>
-
-            </div>
+    <section class="section services" id="servicos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><span class="eyebrow">O que fazemos</span><h2>Cuidado para cada momento</h2></div>
+          <p>Do banho de rotina ao acompanhamento veterinário, seu melhor amigo recebe atenção completa.</p>
         </div>
+        <div class="service-filters" role="group" aria-label="Filtrar serviços">
+          <button class="filter-button active" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+          <button class="filter-button" type="button" data-filter="estetica" aria-pressed="false">Estética</button>
+          <button class="filter-button" type="button" data-filter="saude" aria-pressed="false">Saúde</button>
+          <button class="filter-button" type="button" data-filter="bem-estar" aria-pressed="false">Bem-estar</button>
+        </div>
+        <div class="service-grid" id="service-grid" aria-live="polite"></div>
+      </div>
     </section>
 
-    <!-- DEPOIMENTOS -->
-
-    <section class="depoimentos">
-        <div class="container">
-
-            <div class="section-title">
-                <h2>O que nossos clientes dizem</h2>
-            </div>
-
-            <div class="depoimentos-grid">
-
-                <div class="depoimento-card">
-                    <p>
-                        “Meu cachorro ama a PetCare! Atendimento incrível.”
-                    </p>
-
-                    <h4>— Ana Souza</h4>
-                </div>
-
-                <div class="depoimento-card">
-                    <p>
-                        “Equipe super atenciosa e ambiente muito bonito.”
-                    </p>
-
-                    <h4>— Carlos Henrique</h4>
-                </div>
-
-            </div>
+    <section class="section how-it-works">
+      <div class="container how-grid">
+        <div class="how-image reveal">
+          <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=85&w=1100&auto=format&fit=crop" alt="Profissional cuidando de um cachorro" loading="lazy" width="700" height="760">
+          <div class="floating-rating"><span>♥</span><div><strong>98%</strong><small>dos clientes recomendam</small></div></div>
         </div>
+        <div class="how-copy reveal">
+          <span class="eyebrow">Simples e rápido</span>
+          <h2>Agende em poucos minutos</h2>
+          <p>Você escolhe o cuidado ideal e nós preparamos tudo para receber seu pet.</p>
+          <ol class="steps">
+            <li><span>01</span><div><h3>Escolha o serviço</h3><p>Compare opções, valores e duração.</p></div></li>
+            <li><span>02</span><div><h3>Conte sobre seu pet</h3><p>Informe os dados que ajudam no atendimento.</p></div></li>
+            <li><span>03</span><div><h3>Defina data e horário</h3><p>Selecione o melhor momento para você.</p></div></li>
+          </ol>
+          <button class="btn" type="button" data-open-booking>Começar agendamento</button>
+        </div>
+      </div>
     </section>
 
-    <!-- CONTATO -->
-
-    <section class="contato" id="contato">
-        <div class="container contato-content">
-
-            <div>
-                <h2>Entre em Contato</h2>
-                <p>
-                    Agende um atendimento e cuide do seu melhor amigo.
-                </p>
-            </div>
-
-            <form id="contact-form">
-                <input type="text" id="name" placeholder="Seu nome">
-                <input type="email" id="email" placeholder="Seu email">
-                <textarea id="message" placeholder="Sua mensagem"></textarea>
-
-                <button type="submit" class="btn">
-                    Enviar Mensagem
-                </button>
-            </form>
-
+    <section class="section about" id="sobre">
+      <div class="container about-grid">
+        <div class="about-copy reveal">
+          <span class="eyebrow">Nossa história</span>
+          <h2>Mais que um pet shop.<br>Uma segunda casa.</h2>
+          <p>A PetCare nasceu de um amor enorme pelos animais e de uma ideia simples: todo pet merece cuidado individual, respeito e momentos felizes.</p>
+          <div class="about-metrics">
+            <div><strong>5+</strong><span>anos de experiência</span></div>
+            <div><strong>12</strong><span>especialistas</span></div>
+            <div><strong>1.5k</strong><span>pets atendidos</span></div>
+          </div>
         </div>
+        <div class="about-collage reveal">
+          <img class="about-main" src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?q=85&w=1000&auto=format&fit=crop" alt="Veterinária examinando um cachorro" loading="lazy" width="600" height="680">
+          <img class="about-small" src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?q=85&w=600&auto=format&fit=crop" alt="Gato relaxado" loading="lazy" width="300" height="300">
+        </div>
+      </div>
     </section>
 
-    <!-- FOOTER -->
-
-    <footer class="footer">
-        <div class="container footer-content">
-            <h3>PetCare</h3>
-
-            <p>
-                © 2026 PetCare — Todos os direitos reservados.
-            </p>
+    <section class="section testimonials" id="avaliacoes">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <div><span class="eyebrow">Quem conhece, recomenda</span><h2>Histórias de quem confia</h2></div>
+          <p>O carinho dos nossos clientes é a melhor parte do trabalho.</p>
         </div>
-    </footer>
+        <div class="testimonial-grid">
+          <article class="testimonial-card reveal"><div class="stars">★★★★★</div><blockquote>“A Mel sempre teve medo de banho. Aqui ela entra abanando o rabo! A equipe é cuidadosa e manda atualizações durante o atendimento.”</blockquote><footer><span>🐕</span><div><strong>Ana & Mel</strong><small>Cliente há 2 anos</small></div></footer></article>
+          <article class="testimonial-card featured reveal"><div class="stars">★★★★★</div><blockquote>“O atendimento veterinário foi incrível. Explicaram tudo com calma e acompanharam a recuperação do Theo de perto.”</blockquote><footer><span>🐈</span><div><strong>Lucas & Theo</strong><small>Cliente há 1 ano</small></div></footer></article>
+          <article class="testimonial-card reveal"><div class="stars">★★★★★</div><blockquote>“Viajei tranquila sabendo que o Max estava seguro. Recebi fotos todos os dias e ele voltou super feliz.”</blockquote><footer><span>🐕‍🦺</span><div><strong>Marina & Max</strong><small>Cliente há 3 anos</small></div></footer></article>
+        </div>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <section class="section faq" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-intro reveal"><span class="eyebrow">Perguntas frequentes</span><h2>Ficou alguma dúvida?</h2><p>Reunimos as respostas mais importantes para seu primeiro atendimento.</p><a class="text-link" href="https://wa.me/5511999999999" target="_blank" rel="noopener">Falar com a equipe →</a></div>
+        <div class="accordion reveal">
+          <details><summary>Preciso levar a carteirinha de vacinação?<span>+</span></summary><p>Para consultas e hospedagem, sim. Ela nos ajuda a manter todos os pets protegidos e o histórico de saúde atualizado.</p></details>
+          <details><summary>Quanto tempo dura o banho e tosa?<span>+</span></summary><p>Em média de 60 a 90 minutos, dependendo do porte, pelagem e serviço escolhido.</p></details>
+          <details><summary>Posso acompanhar o atendimento?<span>+</span></summary><p>Temos uma área de espera confortável e enviamos atualizações quando o serviço exige mais tempo.</p></details>
+          <details><summary>Como funciona o cancelamento?<span>+</span></summary><p>Você pode remarcar sem custo avisando com pelo menos duas horas de antecedência.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-card reveal">
+        <div><span class="eyebrow light">Seu pet merece</span><h2>Pronto para um dia de cuidado?</h2><p>Agende agora e deixe o resto com a nossa equipe.</p></div>
+        <button class="btn btn-light" type="button" data-open-booking>Agendar atendimento →</button>
+        <span class="cta-paw" aria-hidden="true">🐾</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><a class="logo logo-light" href="#topo"><span class="logo-mark">🐾</span><span>Pet<span>Care</span></span></a><p>Cuidado, saúde e carinho para quem faz parte da sua família.</p></div>
+      <div><h3>Navegação</h3><a href="#servicos">Serviços</a><a href="#sobre">Sobre nós</a><a href="#avaliacoes">Avaliações</a><a href="#faq">Dúvidas</a></div>
+      <div><h3>Atendimento</h3><p>Seg–Sex: 8h às 19h</p><p>Sábado: 8h às 17h</p><p>Domingo: Emergências</p></div>
+      <div><h3>Contato</h3><a href="tel:+5511999999999">(11) 99999-9999</a><a href="mailto:ola@petcare.com.br">ola@petcare.com.br</a><p>Rua dos Pets, 123 — São Paulo</p></div>
+    </div>
+    <div class="container footer-bottom"><p>© <span id="current-year"></span> PetCare. Projeto demonstrativo.</p><a href="#topo">Voltar ao topo ↑</a></div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="Conversar pelo WhatsApp">✆</a>
+
+  <dialog class="booking-dialog" id="booking-dialog" aria-labelledby="booking-title">
+    <div class="booking-shell">
+      <div class="booking-header">
+        <div><span class="eyebrow">Agendamento online</span><h2 id="booking-title">Reserve um cuidado</h2></div>
+        <button class="icon-button" type="button" data-close-booking aria-label="Fechar agendamento">×</button>
+      </div>
+      <div class="booking-progress" aria-label="Progresso do agendamento">
+        <span class="active" data-progress="1"><i>1</i> Serviço</span><b></b><span data-progress="2"><i>2</i> Seu pet</span><b></b><span data-progress="3"><i>3</i> Data</span><b></b><span data-progress="4"><i>4</i> Confirmar</span>
+      </div>
+
+      <form id="booking-form" novalidate>
+        <section class="booking-step active" data-step="1">
+          <h3>Qual cuidado seu pet precisa?</h3>
+          <div class="booking-services" id="booking-services"></div>
+        </section>
+
+        <section class="booking-step" data-step="2">
+          <h3>Conte um pouco sobre vocês</h3>
+          <div class="form-grid">
+            <label>Seu nome<input name="ownerName" type="text" autocomplete="name" required placeholder="Como podemos chamar você?"><small class="field-error"></small></label>
+            <label>WhatsApp<input name="phone" type="tel" autocomplete="tel" required placeholder="(11) 99999-9999"><small class="field-error"></small></label>
+            <label>Nome do pet<input name="petName" type="text" required placeholder="Ex.: Mel"><small class="field-error"></small></label>
+            <label>Tipo de pet<select name="petType" required><option value="">Selecione</option><option>Cachorro</option><option>Gato</option><option>Outro</option></select><small class="field-error"></small></label>
+            <label>Porte<select name="petSize" required><option value="">Selecione</option><option>Pequeno</option><option>Médio</option><option>Grande</option></select><small class="field-error"></small></label>
+            <label>Idade aproximada<input name="petAge" type="number" min="0" max="30" placeholder="Ex.: 3"></label>
+            <label class="full-field">Observações<textarea name="notes" rows="3" placeholder="Alergias, comportamento ou cuidados especiais"></textarea></label>
+          </div>
+        </section>
+
+        <section class="booking-step" data-step="3">
+          <h3>Quando podemos receber vocês?</h3>
+          <label class="date-field">Escolha uma data<input id="booking-date" name="date" type="date" required><small class="field-error"></small></label>
+          <div class="time-grid" id="time-grid" role="radiogroup" aria-label="Horários disponíveis"></div>
+        </section>
+
+        <section class="booking-step" data-step="4">
+          <h3>Confira os detalhes</h3>
+          <div class="booking-summary" id="booking-summary"></div>
+          <label class="consent"><input name="consent" type="checkbox" required><span>Confirmo que os dados estão corretos e aceito receber a confirmação pelo WhatsApp.</span></label>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </section>
+
+        <div class="booking-actions">
+          <button class="btn-ghost" id="prev-step" type="button" hidden>← Voltar</button>
+          <button class="btn" id="next-step" type="button">Continuar →</button>
+          <button class="btn" id="confirm-booking" type="submit" hidden>Confirmar agendamento</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
 </body>
-
 </html>
